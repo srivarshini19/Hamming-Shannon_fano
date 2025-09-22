@@ -5,9 +5,9 @@ Apply the Huffman and Shannon-Fano to this source.
 Show that by drawing the tree diagram, and 
 Calculate the average code word length, entropy, variance, redundancy, and efficiency.
 # Tools Required:
-colab matplotlib
 # Program:
 ```
+#Huffman and Shannon-Fano coding
 import numpy as np
 import math 
 L  = 0
@@ -45,22 +45,39 @@ print(f"Average Codeword Length is : {L}")
 print(f"Entropy is : {hs}")
 print(f"Efficiency is : {eff}")
 print(f"Redudancy is : {red}")
-print(f"Variance is : {var}")
-
- 
+print(f"Variance is : {var}") 
 ```
 # Calculation:
+<img width="842" height="1280" alt="image" src="https://github.com/user-attachments/assets/040be9f7-9ade-4e1f-b136-cd4fd5769563" />
+<img width="835" height="1280" alt="image" src="https://github.com/user-attachments/assets/5ef4a2bb-143c-4c0c-a42a-614e26e4a2ca" />
 
-<img width="800" height="1280" alt="image" src="https://github.com/user-attachments/assets/e6388d12-fbdb-4fce-9c85-6ce2672dc01d" />
 
 
 # Output
-
-<img width="1123" height="201" alt="image" src="https://github.com/user-attachments/assets/6565ec14-378e-4e01-938a-c8c069feb8c6" />
-<img width="1189" height="990" alt="image" src="https://github.com/user-attachments/assets/e357ac84-2200-4b91-9053-f171412b845e" />
-
-
+```
+Enter the number of Samples : 7
+Enter the probability of sample values 1: 0.125
+Enter the probability of sample values 2: 0.0625
+Enter the probability of sample values 3: 0.25
+Enter the probability of sample values 4: 0.0625
+Enter the probability of sample values 5: 0.125
+Enter the probability of sample values 6: 0.125
+Enter the probability of sample values 7: 0.25
+Enter the length of the sample values 1: 3
+Enter the length of the sample values 2: 4
+Enter the length of the sample values 3: 2
+Enter the length of the sample values 4: 4
+Enter the length of the sample values 5: 3
+Enter the length of the sample values 6: 3
+Enter the length of the sample values 7: 2
+Average Codeword Length is : 2.625
+Entropy is : 2.625
+Efficiency is : 1.0
+Redudancy is : 0.0
+Variance is : 0.484
+``` 
 # Results:
 ```
-For the given discrete memoryless source with probabilities {0.125,0.0625,0.25,0.0625,0.125,0.125,0.25}, both Huffman and Shannon–Fano coding were applied. The simulation was carried out in Python (Google Colab). Since the source probabilities are exact powers of two, the codeword lengths match the ideal values, giving zero redundancy and 100% coding efficiency. Both Huffman and Shannon–Fano yield identical results.
+The Huffman and Shannon-Fano of the given statistics {0.125,0.0625,0.25,0.0625,0.125,0.125,0.25} using python are verified.
+
 ```
